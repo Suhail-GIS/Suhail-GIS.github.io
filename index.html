@@ -95,13 +95,17 @@
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
       <a href="resume.pdf" class="resume-button" download>Download Resume</a>
+      <a href="#certificates">Certificates</a>
     </nav>
   </header>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>I am Mohd Suhail, currently pursuing BS in Computer Science from UoPeople, a Post Graduate in Geography with a strong academic foundation in History, Political Science, and Education. I am passionate about Geographic Information Systems and mapping technologies. I explore tools like ArcGIS Pro, QGIS, and Python to visualize and analyze spatial data. This portfolio is a reflection of my early work and progress as I explore the GIS world.</p>
-  </section>
+  <p>I am Mohd Suhail, a postgraduate in Geography and a BS Computer Science student at the University of the People. My academic foundation includes degrees in History, Political Science, and Education, with a deep-rooted passion for geospatial technologies, climate change, and sustainable development.</p>
+  <p>I specialize in GIS and Remote Sensing applications and work extensively with tools like QGIS, ArcGIS Pro, and Google Earth Engine. My interests lie in land use/land cover change, environmental monitoring, and spatial data analysis to support decision-making for urban planning, water resource management, and climate resilience.</p>
+  <p>I have actively contributed to climate awareness and rural engagement through the National Service Scheme (NSS). During my NSS tenure, I organized and participated in environmental campaigns, afforestation drives, and climate awareness speeches in nearby villages. I also led rallies and debates on climate change and its impact on rural communities, aligning my service work with the UN Sustainable Development Goals (SDGs).</p>
+  <p>Through both research and fieldwork, I aim to contribute meaningfully to organizations like the United Nations, UNEP, ESRI or NASA that focus on global environmental and developmental challenges.</p>
+</section>
 
   <section id="education">
     <h2>Education</h2>
@@ -134,7 +138,6 @@
       <div class="card">
         <h3>Rural Public Services Monitoring Survey</h3>
         <p>This survey collects real-time data on infrastructure in rural areas using ArcGIS Survey123 for monitoring water, electricity, schools, and sanitation.</p>
-        <img src="survey123.png" alt="Public Service Monitoring Project" class="project-img">
         <video class="project-video" controls>
           <source src="survey-demo.mp4" type="video/mp4">
           Your browser does not support the video tag.
@@ -174,6 +177,50 @@
       </div>
     </div>
   </section>
+  <section id="certificates">
+  <h2 onclick="toggleCertificates()" style="cursor: pointer; color: #3b2f63;">
+    📜 Certificates <span id="toggle-icon">▼</span>
+  </h2>
+  <div id="certificates-content" style="display: none;">
+    <div class="projects-grid">
+      <div class="card">
+        <h3>UNITAR – Human Health and Climate Change</h3>
+        <img src="certificates/UNITAR Certificate.png" alt="UNITAR Certificate" class="project-img">
+      </div>
+      <div class="card">
+        <h3>Esri MOOC – Make an Impact with Modern Geo Apps</h3>
+        <img src="certificates/ESRI MOOC Certificate.png" alt="Esri MOOC Certificate" class="project-img">
+      </div>
+      <div class="card">
+        <h3>NASA ARSET – Remote Sensing Training</h3>
+        <img src="certificates/NASA Certificate.png" alt="NASA ARSET Certificate" class="project-img">
+      </div>
+      <div class="card">
+        <h3>ESRI – GIS Foundation</h3>
+        <img src="certificates/ESRI Certificate.png" alt="ESRI India Certificate" class="project-img">
+      </div>
+      <div class="card">
+        <h3>Paris Agreement & Climate Framework</h3>
+        <img src="certificates/Paris Agreement Certificate.png" alt="Paris Agreement Certificate" class="project-img">
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  function toggleCertificates() {
+    const content = document.getElementById("certificates-content");
+    const icon = document.getElementById("toggle-icon");
+    if (content.style.display === "none") {
+      content.style.display = "block";
+      icon.textContent = "▲";
+    } else {
+      content.style.display = "none";
+      icon.textContent = "▼";
+    }
+  }
+</script>
+
 
   <section id="skills">
     <h2>Skills</h2>
